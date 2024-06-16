@@ -1,0 +1,105 @@
+*{
+    margin: 0px;
+    padding: 0;
+}
+.cabecera{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin: 0;
+padding:0;
+background-color: rgb(214, 19, 19);
+color: white;
+}
+.cabecera a{
+    color: white;
+    text-decoration: none;
+}
+nav{
+width: 100%;
+height:20vh;
+position:fixed;
+top: 0%;
+}
+h1{
+font-size: 80px;
+font-family:"Dancing Script";
+}
+#menu ul{
+    margin:10px;
+    padding:0;
+    text-align: center;
+}
+#menu ul li{
+    display: inline-block;
+}
+#menu ul li a{
+    color:white;
+    text-decoration: none;
+    display: block;
+    padding:15px;
+    margin: 0;
+}
+#menu ul li a:hover{
+    background-color: rgb(255, 127, 127);
+    cursor:-webkit-grabbing;
+}
+.pie p{
+    margin:0;
+    padding: 0px;
+    text-align: center; 
+    border: 0;
+}
+.fa-brands{
+    font-size:25px;
+    margin:10px;
+    cursor:-webkit-grabbing;
+}
+#tabla{
+    border-collapse: collapse;
+    
+
+}
+th{
+    border: 2px solid red;
+    color: black;
+}
+#contenedor{
+    margin: 5%;
+    padding-top: 25vh;
+    display: grid;
+    grid-template-areas:"header header header"
+                        "article article nav"
+                        "fouder fouder fouder";
+    grid-template-columns: 1fr 3fr 3fr;    
+    gap:10px;                
+}
+.cabecera{
+    background-color: rgb(214, 19, 19);
+    grid-area: header;
+}
+.menu{
+    grid-area: nav;
+    text-align: center;
+}
+.articulo{
+    background-color:rgb(214, 19, 19);
+    grid-area: article;
+    color: white;
+}
+.pie2{
+    background-color:rgb(214, 19, 19);
+    grid-area: fouder;
+    color: white;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+hr{
+    margin:0;
+    padding:0;
+    width: 80%;
+}
+
+
